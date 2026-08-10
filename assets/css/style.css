@@ -8,8 +8,7 @@
   --text: #333;
   --text-muted: #667085;
   --line: rgba(17, 24, 39, 0.09);
-  --accent: #9BBE7C;
-  --accent-2: #7b8cff;
+  --accent: #5F7C46;
   --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
   --radius-lg: 28px;
   --radius-md: 20px;
@@ -72,65 +71,6 @@ button {
   position: relative;
   scroll-margin-top: calc(var(--nav-h) + 24px);
 }
-
-/*내가추가한것들 */
-h2 {
-  font-family: 'SchoolSafeUmbrella';
-  color: #1E4737;
-}
-
-h3 {
-  font-family: 'SchoolSafeUmbrella';
-  color: var(--main_text);
-}
-
-.about-body {
-  background-color: #fff;
-  border-radius: 30px;
-}
-
-.profile-card {
-  background-color: #fff;
-  border-radius: 30px;
-}
-
-.project-main-box {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 5%;
-  padding-bottom: 50px;
-}
-
-.project-video-box {
-  flex: 70%;
-}
-
-.project-video-box video {
-  border-radius: 30px;
-}
-
-.projecr-main-text-box {
-  flex: 25%;
-}
-
-.thumb-video {
-  border-radius: 20px;
-  overflow: clip;
-}
-
-.poject1 {
-  color: var(--text);
-  font-size: 1.75rem;
-  letter-spacing: -0.03em;
-  font-family: 'CookieRun';
-}
-
-.poject1-sub-text {
-  color: #5F7C46;
-}
-
-/* 여기까지 */
 
 .eyebrow {
   display: inline-flex;
@@ -213,7 +153,7 @@ h3 {
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  background: linear-gradient(135deg, var(--accent));
   box-shadow: 0 0 18px rgba(50, 199, 161, 0.35);
 }
 
@@ -221,7 +161,7 @@ h3 {
   display: flex;
   gap: 20px;
   align-items: center;
-  color: var(--text-muted);
+  color: var(--accent);
   font-size: 0.95rem;
 }
 
@@ -793,7 +733,7 @@ h3 {
   gap: 8px;
 }
 
-.brand-project-box{
+.brand-project-box {
   background-color: #fff;
   padding: 30px;
   border-radius: 30px;
@@ -811,8 +751,12 @@ h3 {
 .brand-slider-title,
 .work-row-head p {
   font-size: 0.92rem;
-  color: var(--accent);
+  color: var(--text);
   margin: 0;
+}
+
+.brand-slider-title {
+  color: var(--accent);
 }
 
 .brand-track,
@@ -896,6 +840,10 @@ h3 {
   aspect-ratio: 9 / 16;
 }
 
+.video-thumb {
+  aspect-ratio: 16 / 9;
+}
+
 .cardnews-thumb {
   aspect-ratio: 4 / 5;
 }
@@ -905,7 +853,7 @@ h3 {
 }
 
 .brand-thumb {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 3 / 3;
 }
 
 .thumb-card:hover {
@@ -1070,6 +1018,11 @@ h3 {
   z-index: 2;
 }
 
+/* 롱폼비디오 사이즈 변경 */
+.ani .thumb-track > .thumb-card {
+    width: min(450px, 33vw);
+}
+
 /* skill icon */
 .skills-icon {
   display: grid;
@@ -1103,10 +1056,9 @@ h3 {
 }
 
 .site-footer {
-  padding: 60px 0 120px;
-  border-top: 1px solid rgba(17, 24, 39, 0.06);
-  color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.65);
+  padding: 60px 0 60px;
+  color: var(--main-bacground);
+  background-color: var(--main_text);
   backdrop-filter: blur(14px);
 }
 
@@ -1120,7 +1072,7 @@ h3 {
 }
 
 .footer-grid strong {
-  color: var(--text);
+  color: var(--main-bacground);
   display: block;
   margin-bottom: 6px;
 }
@@ -1236,6 +1188,78 @@ h3 {
   display: block;
 }
 
+/*내가추가한것들 */
+h2 {
+  /* 섹션타이틀 */
+  font-family: 'SchoolSafeUmbrella';
+  color: #1E4737;
+}
+
+.my-title {
+  font-family: 'SchoolSafeUmbrella';
+  color: var(--main_text);
+}
+
+.work-row-head h3 {
+  /* 섹션서브타이틀 */
+  color: var(--accent);
+}
+
+.about-body {
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.profile-card {
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.project-main-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5%;
+  padding-bottom: 50px;
+}
+
+.project-video-box {
+  flex: 70%;
+}
+
+.project-video-box video {
+  border-radius: 30px;
+}
+
+.projecr-main-text-box {
+  flex: 25%;
+}
+
+.thumb-video {
+  border-radius: 20px;
+  overflow: clip;
+}
+
+.poject1 {
+  color: var(--text);
+  font-size: 1.75rem;
+  letter-spacing: -0.03em;
+  font-family: 'CookieRun';
+}
+
+.poject1-sub-text {
+  color: #5F7C46;
+}
+
+.brand-project-box .thumb-overlay strong {
+  color: #714B2E;
+}
+
+.slider-track{
+  background: none;
+}
+
+/* 여기까지 */
 
 
 /* ===== Modal gallery variants: poster / banner / cardnews ===== */
@@ -1703,16 +1727,20 @@ template {
   }
 
   /* 내가따로추가 */
-  .project-main-box{
+  .project-main-box {
     gap: 0px;
     display: inline-block;
-   }
-   .project-video-box, .projecr-main-text-box{
+  }
+
+  .project-video-box,
+  .projecr-main-text-box {
     width: 100%;
-   }
-   .title-br{
+  }
+
+  .title-br {
     display: none;
-   }
+  }
+
 
   /* 여기까지 */
 
@@ -1775,17 +1803,23 @@ template {
   :root {
     --container: min(100% - 28px, 100%);
   }
-   /* 내가따로추가 */
-   .project-main-box{
+
+  /* 내가따로추가 */
+  .project-main-box {
     gap: 0px;
     display: inline-block;
-   }
-   .project-video-box, .projecr-main-text-box{
+  }
+
+  .project-video-box,
+  .projecr-main-text-box {
     width: 100%;
-   }
-   .title-br{
+  }
+
+  .title-br {
     display: none;
-   }
+  }
+  
+
   /* 여기까지 */
 
   .site-header {
