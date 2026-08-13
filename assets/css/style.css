@@ -751,9 +751,9 @@ button {
   scroll-snap-align: start;
 }
 
-/* .brand-track>.brand-thumb {
+.brand-track>.brand-thumb {
   width: min(360px, 32vw);
-} */
+}
 
 /* 브랜드카드 가로배치 갯수 */
 .brand-track>.brand-thumb {
@@ -1208,8 +1208,11 @@ h2 {
   font-family: 'CookieRun';
 }
 
-.brand-project-box .thumb-overlay strong {
+#brandTrack01 .thumb-overlay strong {
   color: #714B2E;
+}
+#brandTrack02 .thumb-overlay strong {
+  color: #779799;
 }
 
 .slider-track{
