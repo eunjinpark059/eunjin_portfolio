@@ -670,57 +670,7 @@ button {
   letter-spacing: -0.04em;
 }
 
-/* 브랜드별 색상 start */
-/* 이 부분을 지우면 포트폴리오 메인 컬러를 사용하실 수 있습니다. */
-.brand1_color h3 {
-  color: #c4b02a;
-}
 
-.brand1_color .tag a {
-  background-color: #c4b02a;
-  color: #fff;
-}
-
-.brand1_color .tag a:hover {
-  background-color: #a24b1c;
-  color: #fff;
-}
-
-.brand1_color .point-color a {
-  background-color: #a24b1c;
-  color: #fff;
-}
-
-.brand1_color .point-color a:hover {
-  background-color: #c4b02a;
-  color: #fff;
-}
-
-.brand2_color h3 {
-  color: orangered;
-}
-
-.brand2_color .tag a {
-  background-color: orangered;
-  color: #fff;
-}
-
-.brand2_color .tag a:hover {
-  background-color: orange;
-  color: #fff;
-}
-
-.brand2_color .point-color a {
-  background-color: orange;
-  color: #fff;
-}
-
-.brand2_color .point-color a:hover {
-  background-color: orangered;
-  color: #fff;
-}
-
-/* 브랜드별 색상 end */
 
 .brand-info p {
   margin: 0;
@@ -750,7 +700,7 @@ button {
 
 .brand-slider-title,
 .work-row-head p {
-  font-size: 0.92rem;
+  font-size: 1.2rem;
   color: var(--text);
   margin: 0;
 }
@@ -801,8 +751,13 @@ button {
   scroll-snap-align: start;
 }
 
-.brand-track>.brand-thumb {
+/* .brand-track>.brand-thumb {
   width: min(360px, 32vw);
+} */
+
+/* 브랜드카드 가로배치 갯수 */
+.brand-track>.brand-thumb {
+  width: min(33.33%, 32vw);
 }
 
 .thumb-track>.thumb-card {
@@ -1233,7 +1188,7 @@ h2 {
   flex: 70%;
 }
 
-.project-video-box video {
+.project-video-box video, img {
   border-radius: 30px;
 }
 
@@ -1247,14 +1202,10 @@ h2 {
 }
 
 .poject1 {
-  color: var(--text);
+  color: #557836;
   font-size: 1.75rem;
   letter-spacing: -0.03em;
   font-family: 'CookieRun';
-}
-
-.poject1-sub-text {
-  color: #5F7C46;
 }
 
 .brand-project-box .thumb-overlay strong {
@@ -1263,6 +1214,13 @@ h2 {
 
 .slider-track{
   background: none;
+}
+
+.poject2 {
+  color: #779799;
+  font-size: 1.75rem;
+  letter-spacing: -0.03em;
+  font-family: 'Paperozi';
 }
 
 /* 여기까지 */

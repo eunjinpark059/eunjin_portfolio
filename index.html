@@ -6,22 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
   <link rel="shortcut icon" href="./assets/img/favi.png" type="image/x-icon">
-  <link rel="stylesheet" href="../portpolio/assets/css/webfont">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- 메타태그 -->
+   <meta name="description" content="박은진의 포트폴리오">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta property="og:title" content="박은진_포트폴리오">
+<meta property="og:description" content="박은진의 포트폴리오입니다">
+<meta property="og:image" content="이미지 절대경로">
+<meta property="og:url" content="https://eunjinpark059.github.io/eunjin_portfolio/">
+<meta property="og:type" content="website">
 
   <style>
-     @font-face {
+    @font-face {
       font-family: 'SchoolSafeUmbrella';
       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimUsanR.woff2') format('woff2');
       font-weight: 400;
       font-display: swap;
     }
+
     @font-face {
-    font-family: 'CookieRun';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
-    font-weight: normal;
-    font-display: swap;
-}
+      font-family: 'CookieRun';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+      font-weight: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Paperozi';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-display: swap;
+    }
   </style>
 </head>
 
@@ -162,25 +177,7 @@
 
         <div class="brand-stack">
           <section class="card brand-row reveal reveal-scale">
-            <div class="brand-info brand1_color">
-              <!-- 브랜드별 색상  brand1_color-->
 
-
-              <!-- <h3>Brand Project 01</h3>
-              <p>
-                브랜드 컨셉, 비주얼 시스템, 웹 가이드와 웹사이트 결과물을 연결한 프로젝트.
-              </p> -->
-              <!-- <div class="brand-meta">
-                <span class="tag"><a href="#" target="_blank">Identity</a></span>
-                <span class="tag"><a href="#" target="_blank">Design BX</a></span>
-                <span class="tag"><a href="#" target="_blank">Web Guide</a></span>
-                <span class="tag point-color"><a href="#" target="_blank">Web Site</a></span>
-                <span class="tag"><a href="#" target="_blank">Video Guide</a></span>
-                <span class="tag"><a href="#" target="_blank">App</a></span>
-              </div> -->
-            </div>
-
-            <!-- 내가 따로 추가한것 -->
             <div class="project-main-box">
               <div class="project-video-box">
                 <video autoplay muted loop playsinline preload="metadata">
@@ -190,8 +187,7 @@
               <div class="projecr-main-text-box">
                 <p class="poject1">
                   생태 브랜드<br class="title-br">
-                  ‘어슬렁’
-                  </h3>
+                  ‘어슬렁’</p>
                 <p class="poject1-sub-text">
                   ‘어슬렁’은 천천히 걸으며 주변을 둘러보는 모습을 뜻하는 우리말입니다.자연을 서두르지 않고 직접 바라보고, 느끼며 탐험하는 브랜드의 철학을 담았습니다.어슬렁어슬렁 걸으며 자연 속
                   새로운 발견을 찾아가는 모습과, ‘US(우리, 함께)’라는
@@ -199,15 +195,14 @@
                 </p>
               </div>
             </div>
-            <!-- 여기까지 -->
 
             <div class="brand-project-box">
               <div class="brand-slider-head">
                 <span class="brand-slider-title">브랜드 기획 | 제품 목업 | 웹 디자인 가이드 | 웹사이트</span>
-                <!-- <div class="slider-controls">
+                <div class="slider-controls">
                   <button class="slider-btn" type="button" data-slider-prev="brandTrack01">←</button>
                   <button class="slider-btn" type="button" data-slider-next="brandTrack01">→</button>
-                </div> -->
+                </div>
               </div>
               <div class="brand-track slider-track" id="brandTrack01">
 
@@ -216,24 +211,24 @@
                     <video class="thumb-video" muted loop playsinline preload="metadata">
                       <source src="assets/video/usr-logo.mp4" type="video/mp4" />
                     </video></a>
-                    <div class="thumb-overlay">
-                      <strong>Brand Planning</strong>
-                      <p class="thumb-explanation">브랜드의 기획, 디자인 스타일 가이드를 확인하실 수 있습니다.</p>
-                    </div>
+                  <div class="thumb-overlay">
+                    <strong>Brand Planning</strong>
+                    <p class="thumb-explanation">브랜드의 기획, 디자인 스타일 가이드를 확인하실 수 있습니다.</p>
+                  </div>
                 </article>
-                
+
                 <article class="thumb-card brand-thumb">
                   <a href="./usr_mockup.html" target="_blank">
                     <video class="thumb-video" muted loop playsinline preload="metadata">
                       <source src="assets/video/usr-bus.mp4" type="video/mp4" />
                     </video></a>
-                    <!-- <a href="#" target="_blank">
+                  <!-- <a href="#" target="_blank">
                     <img src="assets/img/brand_thumbnail_sample.jpg" alt="brand">
                   </a> -->
-                    <div class="thumb-overlay">
-                      <strong>Mockup</strong>
-                      <p class="thumb-explanation">브랜드의 제품 디자인을 확인하실 수 있습니다.</p>
-                    </div>
+                  <div class="thumb-overlay">
+                    <strong>Mockup</strong>
+                    <p class="thumb-explanation">브랜드의 제품 디자인을 확인하실 수 있습니다.</p>
+                  </div>
                 </article>
 
                 <article class="thumb-card brand-thumb">
@@ -263,6 +258,70 @@
 
               </div>
             </div>
+          </section>
+
+          <section class="card brand-row reveal reveal-scale">
+            <div class="project-main-box">
+              <div class="projecr-main-text-box">
+                <p class="poject2">
+                  보듬 동물메디컬센터</p>
+                <p class="poject2-sub-text">
+                  ‘보듬’은 소중한 존재를 따뜻하게 품고 돌본다는 의미를 담고 있습니다.
+                  반려동물을 가족처럼 생각하는 마음을 바탕으로, 전문성과 따뜻함이 공존하는 동물메디컬센터를 디자인했습니다.
+                </p>
+              </div>
+              <div class="project-video-box">
+                <video autoplay muted loop playsinline preload="metadata">
+                  <source src="./assets/video/bodeum_intro.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            <div class="brand-project-box">
+              <div class="brand-slider-head">
+                <span class="brand-slider-title">브랜드 기획 | 웹 디자인 가이드 | 반응형 웹사이트</span>
+              </div>
+              <div class="brand-track slider-track" id="brandTrack02">
+
+                <article class="thumb-card brand-thumb">
+                  <a href="#none" target="_blank">
+                    <video class="thumb-video" muted loop playsinline preload="metadata">
+                      <source src="assets/video/usr-logo.mp4" type="video/mp4" />
+                    </video></a>
+                  <div class="thumb-overlay">
+                    <strong>Brand Planning</strong>
+                    <p class="thumb-explanation">브랜드의 기획, 디자인 스타일 가이드를 확인하실 수 있습니다.</p>
+                  </div>
+                </article>
+
+                <article class="thumb-card brand-thumb">
+                  <a href="#none" target="_blank">
+                    <video class="thumb-video" muted loop playsinline preload="metadata">
+                      <source src="assets/video/usr-desktop-sub.mp4" type="video/mp4" />
+                    </video>
+                    <div class="thumb-overlay">
+                      <strong>Web Guide</strong>
+                      <p class="thumb-explanation">브랜드 사이트의 설계, 시안 디자인을 확인하실 수 있습니다.</p>
+                    </div>
+                  </a>
+                </article>
+
+                <article class="thumb-card brand-thumb">
+                  <a href="https://eunjinpark059.github.io/bodeummc/" target="_blank">
+                    <video class="thumb-video" muted loop playsinline preload="metadata">
+                      <source src="assets/video/usr-desktop.mp4" type="video/mp4" />
+                    </video>
+                    <div class="thumb-overlay">
+                      <strong>Website</strong>
+                      <p class="thumb-explanation">브랜드 웹사이트를 확인하실 수 있습니다.</p>
+                    </div>
+                    <div class="thumb-overlay"><strong></strong><span></span></div>
+                  </a>
+                </article>
+
+              </div>
+            </div>
+
           </section>
         </div>
       </div>
@@ -371,9 +430,8 @@
                 <div class="thumb-overlay"><strong>Poster Series D</strong><span>Brand / Promotion</span></div>
               </article>
 
-              <article class="poster-thumb thumb-card modal-card" data-modal-type="banner"
-                data-modal-label="banner" data-modal-title="banner"
-                data-modal-description="브랜드 디지털 배너 광고입니다." data-modal-role="Banner Design"
+              <article class="poster-thumb thumb-card modal-card" data-modal-type="banner" data-modal-label="banner"
+                data-modal-title="banner" data-modal-description="브랜드 디지털 배너 광고입니다." data-modal-role="Banner Design"
                 data-modal-tools="Photoshop"
                 data-modal-summary="전시/행사 성격의 키비주얼 포스터 시리즈입니다. 메인 타이포와 무드 중심 그래픽으로 메시지를 압축해 전달합니다."
                 data-modal-meta1-label="Format" data-modal-meta1-value="A2 Poster / Digital Adaptation"
@@ -624,13 +682,11 @@
             </div>
             <div class="thumb-track slider-track" id="videoTrack">
 
-              <article class="video-thumb thumb-card modal-card" data-modal-type="reels"
-                data-modal-title="Animation"
-                data-modal-description="브랜드 애니메이션 입니다."
-                data-modal-role="Animation" data-modal-tools="Premiere Pro, Flow AI"
-                data-modal-meta1-label="Format" data-modal-meta1-value="16:9 Vertical" data-modal-meta2-label="Duration"
-                data-modal-meta2-value="8 sec" data-modal-tags="Brand, animation, Motion"
-                data-modal-note-title="Editable Note"
+              <article class="video-thumb thumb-card modal-card" data-modal-type="reels" data-modal-title="Animation"
+                data-modal-description="브랜드 애니메이션 입니다." data-modal-role="Animation"
+                data-modal-tools="Premiere Pro, Flow AI" data-modal-meta1-label="Format"
+                data-modal-meta1-value="16:9 Vertical" data-modal-meta2-label="Duration" data-modal-meta2-value="8 sec"
+                data-modal-tags="Brand, animation, Motion" data-modal-note-title="Editable Note"
                 data-modal-link="https://example.com" data-modal-media="assets/video/usr-stamp.mp4"
                 data-modal-ratio="16 /9">
                 <video class="thumb-video" muted loop playsinline preload="metadata">
@@ -645,13 +701,11 @@
                 </div>
               </article>
 
-              <article class="video-thumb thumb-card modal-card" data-modal-type="reels"
-                data-modal-title="Animation"
-                data-modal-description="브랜드 인트로 애니메이션 입니다."
-                data-modal-role="Animation" data-modal-tools="Premiere Pro, Flow AI"
-                data-modal-meta1-label="Format" data-modal-meta1-value="16:9 Vertical" data-modal-meta2-label="Duration"
-                data-modal-meta2-value="8 sec" data-modal-tags="Brand, animation, Motion"
-                data-modal-note-title="Editable Note"
+              <article class="video-thumb thumb-card modal-card" data-modal-type="reels" data-modal-title="Animation"
+                data-modal-description="브랜드 인트로 애니메이션 입니다." data-modal-role="Animation"
+                data-modal-tools="Premiere Pro, Flow AI" data-modal-meta1-label="Format"
+                data-modal-meta1-value="16:9 Vertical" data-modal-meta2-label="Duration" data-modal-meta2-value="8 sec"
+                data-modal-tags="Brand, animation, Motion" data-modal-note-title="Editable Note"
                 data-modal-link="https://example.com" data-modal-media="assets/video/usr-walk.mp4"
                 data-modal-ratio="16 /9">
                 <video class="thumb-video" muted loop playsinline preload="metadata">
@@ -666,13 +720,11 @@
                 </div>
               </article>
 
-              <article class="video-thumb thumb-card modal-card" data-modal-type="reels"
-                data-modal-title="Animation"
-                data-modal-description="브랜드 디지털 광고 영상물입니다."
-                data-modal-role="Animation" data-modal-tools="Premiere Pro, Flow AI"
-                data-modal-meta1-label="Format" data-modal-meta1-value="16:9 Vertical" data-modal-meta2-label="Duration"
-                data-modal-meta2-value="8 sec" data-modal-tags="Brand, animation, Banner"
-                data-modal-note-title="Editable Note"
+              <article class="video-thumb thumb-card modal-card" data-modal-type="reels" data-modal-title="Animation"
+                data-modal-description="브랜드 디지털 광고 영상물입니다." data-modal-role="Animation"
+                data-modal-tools="Premiere Pro, Flow AI" data-modal-meta1-label="Format"
+                data-modal-meta1-value="16:9 Vertical" data-modal-meta2-label="Duration" data-modal-meta2-value="8 sec"
+                data-modal-tags="Brand, animation, Banner" data-modal-note-title="Editable Note"
                 data-modal-link="https://example.com" data-modal-media="assets/video/3d_ad.mp4"
                 data-modal-ratio="16 /9">
                 <video class="thumb-video" muted loop playsinline preload="metadata">
@@ -687,13 +739,11 @@
                 </div>
               </article>
 
-              <article class="video-thumb thumb-card modal-card" data-modal-type="reels"
-                data-modal-title="Animation"
-                data-modal-description="브랜드 디지털 광고 영상물입니다."
-                data-modal-role="Animation" data-modal-tools="Premiere Pro, Flow AI"
-                data-modal-meta1-label="Format" data-modal-meta1-value="16:9 Vertical" data-modal-meta2-label="Duration"
-                data-modal-meta2-value="6 sec" data-modal-tags="Brand, animation, Banner"
-                data-modal-note-title="Editable Note"
+              <article class="video-thumb thumb-card modal-card" data-modal-type="reels" data-modal-title="Animation"
+                data-modal-description="브랜드 디지털 광고 영상물입니다." data-modal-role="Animation"
+                data-modal-tools="Premiere Pro, Flow AI" data-modal-meta1-label="Format"
+                data-modal-meta1-value="16:9 Vertical" data-modal-meta2-label="Duration" data-modal-meta2-value="6 sec"
+                data-modal-tags="Brand, animation, Banner" data-modal-note-title="Editable Note"
                 data-modal-link="https://example.com" data-modal-media="assets/video/usr-ad-subway.mp4"
                 data-modal-ratio="16 /9">
                 <video class="thumb-video" muted loop playsinline preload="metadata">
@@ -714,8 +764,8 @@
       </div>
     </section>
 
-        </div>
-      </div>
+    </div>
+    </div>
     </section>
 
   </main>
