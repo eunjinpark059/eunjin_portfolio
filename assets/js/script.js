@@ -336,24 +336,26 @@
       });
     }
 
-    // 버튼과 트랙을 id로 1:1 매칭하지 않고, 버튼 기준으로 가장 가까운
-    // 공통 조상 안에서 .slider-track을 자동으로 찾습니다.
-    // 이렇게 하면 슬라이더 섹션을 통째로 복사해서 늘려도
-    // id를 일일이 맞춰줄 필요가 없습니다. (id가 있으면 우선 사용, 없거나
-    // 못 찾으면 자동 탐색으로 대체)
+    // 버튼과 트랙을 id로 매칭하지 않고, 버튼을 기준으로 DOM에서
+    // 가장 가까운(같은 섹션 안의) .slider-track을 항상 우선 찾습니다.
+    // id는 정말 못 찾았을 때만 최후 수단으로 사용합니다.
+    // → 슬라이더 섹션을 복사해서 늘리고 트랙 id만 새로 바꾼 경우
+    //    (버튼의 data-slider-prev/next 값을 안 고쳐도) 항상 자기
+    //    바로 옆의 트랙을 올바르게 제어합니다.
     function findAssociatedTrack(button) {
-      const trackId = button.dataset.sliderPrev || button.dataset.sliderNext;
-      if (trackId) {
-        const byId = document.getElementById(trackId);
-        if (byId && byId.classList.contains('slider-track')) return byId;
-      }
-
       let el = button.parentElement;
       while (el && el !== document.body) {
         const track = el.querySelector('.slider-track');
         if (track) return track;
         el = el.parentElement;
       }
+
+      const trackId = button.dataset.sliderPrev || button.dataset.sliderNext;
+      if (trackId) {
+        const byId = document.getElementById(trackId);
+        if (byId && byId.classList.contains('slider-track')) return byId;
+      }
+
       return null;
     }
 
